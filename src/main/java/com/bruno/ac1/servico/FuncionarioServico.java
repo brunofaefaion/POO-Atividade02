@@ -17,4 +17,8 @@ public class FuncionarioServico {
     public List<Funcionario> getFuncionarios(){
         return repository.findAll();
     }
+
+    public void salvar(Funcionario funcionario){
+        repository.save(funcionario);
+    }
 }
